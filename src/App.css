@@ -23,7 +23,9 @@
   place-items: center;
   overflow: hidden;
   background: #17131d;
+  -webkit-animation: splashIn 0.3s ease-out both;
   animation: splashIn 0.3s ease-out both;
+  will-change: opacity;
 }
 
 .splash img,
@@ -36,12 +38,21 @@
 
 .splash img {
   object-fit: cover;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.08);
+  transform: translateZ(0) scale(1.08);
+  will-change: transform;
+  -webkit-animation: splashImage 1.8s ease-out both;
   animation: splashImage 1.8s ease-out both;
 }
 
 @media (min-width: 769px) {
   .splash img {
     object-fit: contain;
+    -webkit-transform: translateZ(0) scale(1.04);
+    transform: translateZ(0) scale(1.04);
+    -webkit-animation-name: splashImageDesktop;
     animation-name: splashImageDesktop;
   }
 }
@@ -59,7 +70,9 @@
   font-weight: 800;
   letter-spacing: 0.18em;
   text-indent: 0.18em;
+  -webkit-animation: splashText 1.5s ease-out both;
   animation: splashText 1.5s ease-out both;
+  will-change: opacity, transform;
 }
 
 @keyframes splashIn {
