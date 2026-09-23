@@ -5,7 +5,7 @@ export const About = () => {
     <section id="about" className={styles.aboutPage}>
       <div className={styles.hero}>
         <p className={styles.kicker}>About Me</p>
-        <h1>こんにちは、藤縄 駿佑です</h1>
+        <h1>こんにちは<br />藤縄 駿佑です</h1>
       </div>
 
       <div className={styles.content}>
