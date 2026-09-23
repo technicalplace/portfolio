@@ -22,7 +22,7 @@ function App() {
     isLoading ? (
       <div className="splash" role="status" aria-label="ホームへ移動中">
         <img
-          src="/public/petra-reid-PNjqynaPaaQ-unsplash.jpg"
+          src="/petra-reid-PNjqynaPaaQ-unsplash.jpg"
           alt="スプラッシュ画面"
         />
         <div className="splashOverlay" />
