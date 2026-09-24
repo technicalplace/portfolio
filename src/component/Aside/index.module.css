@@ -35,7 +35,7 @@
 }
 
 .homeLink:hover {
-  color: #8b5cf6;
+  color: var(--accent);
 }
 
 .position {
@@ -89,6 +89,7 @@
   cursor: pointer;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
+  color: var(--accent);
 }
 
 .externalLinks {
@@ -111,7 +112,7 @@
 
 .externalLinks a:hover {
   background-color: #fff;
-  color: #8b5cf6;
+  color: var(--accent);
   transform: translateY(-2px);
 }
 
