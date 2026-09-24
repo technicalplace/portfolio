@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.iconWrapper}>
-        <a href="/" onClick={pageReload}>
+        <a href="/" onClick={pageReload} aria-label="リロード">
           <IoHomeOutline size={36} />
         </a>
         <a href="#about">
