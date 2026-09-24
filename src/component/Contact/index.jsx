@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section id="contact" className={styles.contactPage}>
       <div className={styles.heading}>
-        <p className={styles.kicker}>Get in touch</p>
+        <p className={styles.kicker}>Contact</p>
         <h2>お問い合わせ</h2>
         <p className={styles.intro}>
           お仕事のご相談やご質問など、お気軽にお問い合わせください。
