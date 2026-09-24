@@ -4,6 +4,7 @@ import { MdLaptopChromebook } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { FaGithub } from 'react-icons/fa';
 import { SiGooglesheets } from 'react-icons/si';
+import { links } from '../../constants/links';
 
 export const Header = () => {
   return (
@@ -11,7 +12,7 @@ export const Header = () => {
       <div className={styles.iconWrapper}>
         <a href="#about">
           <IoAccessibility size={36} />
-          <span>about</span>
+          <span>about me</span>
         </a>
         <a href="#products">
           <MdLaptopChromebook size={36} />
@@ -22,7 +23,7 @@ export const Header = () => {
           <span>contact</span>
         </a>
         <a
-          href="https://github.com/technicalplace"
+          href={links.github}
           target="_blank"
           rel="noreferrer"
           aria-label="GitHubを開く"
@@ -30,7 +31,7 @@ export const Header = () => {
           <FaGithub size={28} />
         </a>
         <a
-          href="https://docs.google.com/spreadsheets/d/1tuN_xRYs2BgH3zux7AC-aowcwe6rh2wVfIKsaVFn1Zc/edit?usp=sharing"
+          href={links.skillsheet}
           target="_blank"
           rel="noreferrer"
           aria-label="スキルシートを開く"
@@ -41,4 +42,3 @@ export const Header = () => {
     </header>
   )
 }
-
