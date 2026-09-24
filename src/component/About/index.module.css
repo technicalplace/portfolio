@@ -21,7 +21,7 @@
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8b5cf6;
+  color: var(--accent);
 }
 
 .hero h1 {

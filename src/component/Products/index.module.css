@@ -16,7 +16,7 @@
   text-align: left;
 }
 .kicker, .eyebrow {
-  color: #8b5cf6;
+  color: var(--accent);
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -125,7 +125,7 @@
 }
 .filterRow button:hover,
 .filterRow .activeFilter {
-  background: #8b5cf6;
+  background: var(--accent);
   color: white;
 }
 .productGrid {
@@ -175,7 +175,7 @@
 .cardMeta {
   display: flex;
   justify-content: space-between;
-  color: #8b5cf6;
+  color: var(--accent);
   font-size: 0.72rem;
   font-weight: 700;
 }
@@ -201,7 +201,7 @@
   padding: 4px 8px;
   border-radius: 6px;
   background: #f2eff8;
-  color: #6d4bb0;
+  color: var(--accent);
   font-size: 0.7rem;
 }
 .modalBackdrop {
