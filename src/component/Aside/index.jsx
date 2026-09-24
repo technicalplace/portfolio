@@ -4,18 +4,13 @@ import { MdLaptopChromebook } from 'react-icons/md';
 import { IoIosMail } from 'react-icons/io';
 
 export const Aside = () => {
-  const handleHomeClick = (event) => {
-    event.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-    window.history.pushState(null, '', '/');
+  const pageReload = () => {
+    location.reload();
   };
 
   return (
     <aside className={styles.aside}>
-      <a href="/" className={styles.homeLink} onClick={handleHomeClick}>
+      <a href="/" className={styles.homeLink} onClick={pageReload}>
         <IoHomeOutline className={styles.homeIcon} size={26} aria-hidden="true" />
         <div className={styles.titleWrapper}>
           <p className={styles.position}>Frontend Engineer</p>

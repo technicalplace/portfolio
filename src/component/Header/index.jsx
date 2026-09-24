@@ -6,19 +6,14 @@ import { IoIosMail } from "react-icons/io";
 
 export const Header = () => {
 
-  const handleHomeClick = (event) => {
-    event.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-    history.pushState(null, '', '/');
+  const pageReload = () => {
+    location.reload();
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.iconWrapper}>
-        <a href="/" onClick={handleHomeClick}>
+        <a href="/" onClick={pageReload}>
           <IoHomeOutline size={36} />
         </a>
         <a href="#about">
