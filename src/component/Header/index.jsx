@@ -18,12 +18,15 @@ export const Header = () => {
         </a>
         <a href="#about">
           <IoAccessibility size={36} />
+          <span>about</span>
         </a>
         <a href="#products">
           <MdLaptopChromebook size={36} />
+          <span>products</span>
         </a>
         <a href="#contact">
           <IoIosMail size={36} />
+          <span>contact</span>
         </a>
       </div>
     </header>
