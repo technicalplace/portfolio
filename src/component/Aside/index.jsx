@@ -4,15 +4,12 @@ import { MdLaptopChromebook } from 'react-icons/md';
 import { IoIosMail } from 'react-icons/io';
 import { FaGithub } from 'react-icons/fa';
 import { SiGooglesheets } from 'react-icons/si';
+import { links } from '../../constants/links';
 
-export const Aside = () => {
-  const pageReload = () => {
-    location.reload();
-  };
-
+export const Aside = ({ onHomeClick }) => {
   return (
     <aside className={styles.aside}>
-      <a href="/" className={styles.homeLink} onClick={pageReload} aria-label="リロード">
+      <a href="/" className={styles.homeLink} onClick={onHomeClick} aria-label="ホームへ戻る">
         <div className={styles.titleWrapper}>
           <p className={styles.position}>Frontend Engineer</p>
           <p className={styles.name}>Shunsuke Fujinawa</p>
@@ -42,7 +39,7 @@ export const Aside = () => {
 
       <div className={styles.externalLinks}>
         <a
-          href="https://github.com/technicalplace"
+          href={links.github}
           target="_blank"
           rel="noreferrer"
           aria-label="GitHubを開く"
@@ -50,7 +47,7 @@ export const Aside = () => {
           <FaGithub size={28} />
         </a>
         <a
-          href="https://docs.google.com/spreadsheets/d/1tuN_xRYs2BgH3zux7AC-aowcwe6rh2wVfIKsaVFn1Zc/edit?usp=sharing"
+          href={links.skillsheet}
           target="_blank"
           rel="noreferrer"
           aria-label="スキルシートを開く"
