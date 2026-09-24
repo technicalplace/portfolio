@@ -13,10 +13,21 @@ function App() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 3000);
 
     return () => window.clearTimeout(timer);
   }, []);
+
+  const handleHomeClick = (event) => {
+    event.preventDefault();
+    window.history.pushState(null, '', '/');
+    setIsLoading(true);
+
+    window.setTimeout(() => {
+      setIsLoading(false);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 2500);
+  };
 
   return (
     isLoading ? (
@@ -32,7 +43,7 @@ function App() {
       <>
         <Header />
         <div className="container">
-          <Aside />
+          <Aside onHomeClick={handleHomeClick} />
           <main className="main">
             <About />
             <Products />

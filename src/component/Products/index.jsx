@@ -11,7 +11,6 @@ const products = [
     tags: ['React', 'CSS', 'Responsive'],
     image:
       'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=85',
-    url: 'https://github.com/',
   },
   {
     id: 2,
@@ -22,7 +21,6 @@ const products = [
     tags: ['JavaScript', 'UI design', 'LocalStorage'],
     image:
       'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=85',
-    url: 'https://github.com/',
   },
   {
     id: 3,
@@ -33,7 +31,6 @@ const products = [
     tags: ['HTML', 'CSS', 'Animation'],
     image:
       'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=85',
-    url: 'https://github.com/',
   },
   {
     id: 4,
@@ -44,7 +41,6 @@ const products = [
     tags: ['React', 'Modal', 'Accessibility'],
     image:
       'https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1200&q=85',
-    url: 'https://github.com/',
   },
 ];
 
@@ -89,7 +85,7 @@ export const Products = () => {
     <section id="products" className={styles.productsPage}>
       <div className={styles.sectionHeading}>
         <div>
-          <p className={styles.kicker}>Selected works</p>
+          <p className={styles.kicker}>Products</p>
           <h2>制作物</h2>
         </div>
         <p className={styles.headingText}>
@@ -212,9 +208,6 @@ export const Products = () => {
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
-              <a href={selectedProduct.url} target="_blank" rel="noreferrer">
-                GitHubで見る ↗
-              </a>
             </div>
           </div>
         </div>

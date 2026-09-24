@@ -16,7 +16,7 @@
   text-align: left;
 }
 .kicker, .eyebrow {
-  color: #8b5cf6;
+  color: var(--accent);
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -31,7 +31,7 @@
 }
 .headingText {
   max-width: 340px;
-  color: #6b6375;
+  color: var(--text);
   font-size: 0.9rem;
   text-align: right;
 }
@@ -121,11 +121,11 @@
   padding: 8px 14px;
   border-radius: 999px;
   background: white;
-  color: #6b6375;
+  color: var(--text);
 }
 .filterRow button:hover,
 .filterRow .activeFilter {
-  background: #8b5cf6;
+  background: var(--accent);
   color: white;
 }
 .productGrid {
@@ -135,7 +135,7 @@
 }
 .productCard {
   overflow: hidden;
-  border: 1px solid #e5e4e7;
+  border: 1px solid var(--border);
   border-radius: 18px;
   background: white;
   text-align: left;
@@ -175,7 +175,7 @@
 .cardMeta {
   display: flex;
   justify-content: space-between;
-  color: #8b5cf6;
+  color: var(--accent);
   font-size: 0.72rem;
   font-weight: 700;
 }
@@ -188,7 +188,7 @@
   font-size: 1.3rem;
 }
 .cardBody p, .modalBody p {
-  color: #6b6375;
+  color: var(--text);
   font-size: 0.9rem;
 }
 .tags {
@@ -201,7 +201,7 @@
   padding: 4px 8px;
   border-radius: 6px;
   background: #f2eff8;
-  color: #6d4bb0;
+  color: var(--accent);
   font-size: 0.7rem;
 }
 .modalBackdrop {
