@@ -1,5 +1,5 @@
 import styles from './index.module.css';
-import { IoAccessibility, IoHomeOutline } from 'react-icons/io5';
+import { IoAccessibility } from 'react-icons/io5';
 import { MdLaptopChromebook } from 'react-icons/md';
 import { IoIosMail } from 'react-icons/io';
 import { FaGithub } from 'react-icons/fa';
@@ -13,7 +13,6 @@ export const Aside = () => {
   return (
     <aside className={styles.aside}>
       <a href="/" className={styles.homeLink} onClick={pageReload} aria-label="リロード">
-        <IoHomeOutline className={styles.homeIcon} size={26} />
         <div className={styles.titleWrapper}>
           <p className={styles.position}>Frontend Engineer</p>
           <p className={styles.name}>Shunsuke Fujinawa</p>
