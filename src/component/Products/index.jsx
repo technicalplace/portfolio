@@ -212,9 +212,6 @@ export const Products = () => {
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
-              <a href={selectedProduct.url} target="_blank" rel="noreferrer">
-                GitHubで見る ↗
-              </a>
             </div>
           </div>
         </div>
