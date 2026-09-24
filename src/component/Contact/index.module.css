@@ -33,7 +33,7 @@
 }
 
 .intro {
-  color: #6b6375;
+  color: var(--text);
   font-size: 0.95rem;
 }
 
@@ -115,7 +115,7 @@
 .form select,
 .form textarea {
   width: 100%;
-  border: 1px solid #e5e4e7;
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px 14px;
   background: white;

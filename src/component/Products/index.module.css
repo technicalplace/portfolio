@@ -31,7 +31,7 @@
 }
 .headingText {
   max-width: 340px;
-  color: #6b6375;
+  color: var(--text);
   font-size: 0.9rem;
   text-align: right;
 }
@@ -121,7 +121,7 @@
   padding: 8px 14px;
   border-radius: 999px;
   background: white;
-  color: #6b6375;
+  color: var(--text);
 }
 .filterRow button:hover,
 .filterRow .activeFilter {
@@ -135,7 +135,7 @@
 }
 .productCard {
   overflow: hidden;
-  border: 1px solid #e5e4e7;
+  border: 1px solid var(--border);
   border-radius: 18px;
   background: white;
   text-align: left;
@@ -188,7 +188,7 @@
   font-size: 1.3rem;
 }
 .cardBody p, .modalBody p {
-  color: #6b6375;
+  color: var(--text);
   font-size: 0.9rem;
 }
 .tags {
