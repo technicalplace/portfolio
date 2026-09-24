@@ -18,6 +18,17 @@ function App() {
     return () => window.clearTimeout(timer);
   }, []);
 
+  const handleHomeClick = (event) => {
+    event.preventDefault();
+    window.history.pushState(null, '', '/');
+    setIsLoading(true);
+
+    window.setTimeout(() => {
+      setIsLoading(false);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 2500);
+  };
+
   return (
     isLoading ? (
       <div className="splash" role="status" aria-label="ホームへ移動中">
@@ -32,7 +43,7 @@ function App() {
       <>
         <Header />
         <div className="container">
-          <Aside />
+          <Aside onHomeClick={handleHomeClick} />
           <main className="main">
             <About />
             <Products />
