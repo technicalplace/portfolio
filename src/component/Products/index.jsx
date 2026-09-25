@@ -59,10 +59,10 @@ export const Products = () => {
         : products.filter((product) => product.category === activeCategory),
     [activeCategory],
   );
-
-  useEffect(() => {
+  const changeCategory = (category) => {
+    setActiveCategory(category);
     setActiveSlide(0);
-  }, [activeCategory]);
+  };
 
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -141,7 +141,7 @@ export const Products = () => {
             type="button"
             key={category}
             className={activeCategory === category ? styles.activeFilter : ''}
-            onClick={() => setActiveCategory(category)}
+            onClick={() => changeCategory(category)}
           >
             {category}
           </button>
