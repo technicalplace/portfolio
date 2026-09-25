@@ -1,7 +1,11 @@
+import { useState } from 'react';
+
 import styles from './index.module.css';
 import { links } from '../../constants/links';
 
 export const About = () => {
+  const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
+
   return (
     <section id="about" className={styles.aboutPage}>
       <div className={styles.hero}>
@@ -10,13 +14,22 @@ export const About = () => {
       </div>
 
       <div className={styles.content}>
-        <p>
-          1997年生まれ、新潟県出身。2020年に新潟大学経済学部を卒業後、第四北越銀行に入行し、預金・為替業務や窓口対応を担当。正確性とホスピタリティを重視した顧客対応を通じて、社会人としての基礎力を培いました。<br /><br />
-          その後IT業界へ転職しフロントエンドエンジニアとして、複数のプロジェクトに携わり設計から実装、運用保守など対応しました。技術力はもちろん、多様な関係者と円滑にコミュニケーションを取りながらプロジェクトを推進する力を身につけました。（<a href={links.skillsheet} target="_blank" rel="noreferrer" className={styles.skillSheet}>スキルシート</a>）<br />
-        </p>
-        <p>
-          常にユーザーの視点に立ち、誰のために、何のために作るのかを意識しています。<br /><br />
-        </p>
+        <div className={`${styles.descriptionWrapper} ${isDescriptionExpanded ? styles.expanded : ''}`}>
+          <p className={styles.description}>
+            1997年生まれ、新潟県出身。2020年に新潟大学経済学部を卒業後、第四北越銀行に入行し、預金・為替業務や窓口対応を担当。正確性とホスピタリティを重視した顧客対応を通じて、社会人としての基礎力を培いました。<br /><br />
+            その後IT業界へ転職しフロントエンドエンジニアとして、複数のプロジェクトに携わり設計から実装、運用保守など対応しました。技術力はもちろん、多様な関係者と円滑にコミュニケーションを取りながらプロジェクトを推進する力を身につけました。（<a href={links.skillsheet} target="_blank" rel="noreferrer" className={styles.skillSheet}>スキルシート</a>）<br /><br />
+            常にユーザーの視点に立ち、使いやすく見やすいUI/UXを意識したWebサイト制作を心がけています。
+            また誰のために、何のために作るのかという根本にある目的も忘れないようにしています。
+          </p>
+        </div>
+        <button
+          className={styles.toggleBtn}
+          type="button"
+          onClick={() => setIsDescriptionExpanded(!isDescriptionExpanded)}
+        >
+          {isDescriptionExpanded ? '閉じる' : '続きを読む'}
+          <span>{isDescriptionExpanded ? '↑' : '↓'}</span>
+        </button>
       </div>
 
       <div className={styles.profileGrid}>
