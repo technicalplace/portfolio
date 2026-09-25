@@ -257,7 +257,7 @@
   line-height: 1;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .productsPage {
     padding: 22px 16px;
   }
