@@ -9,8 +9,7 @@ const products = [
     year: '2024',
     description: '旅の思い出を写真と文章で残せる、レスポンシブなWebサイト。',
     tags: ['React', 'CSS', 'Responsive'],
-    image:
-      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=85',
+    image: '/products/travel-journal.jpg',
   },
   {
     id: 2,
@@ -19,8 +18,7 @@ const products = [
     year: '2024',
     description: 'タスクを直感的に整理できる、シンプルなカンバンアプリ。',
     tags: ['JavaScript', 'UI design', 'LocalStorage'],
-    image:
-      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=85',
+    image: '/products/task-flow.jpg',
   },
   {
     id: 3,
@@ -29,8 +27,7 @@ const products = [
     year: '2023',
     description: '小さなお店の世界観とメニューを伝えるランディングページ。',
     tags: ['HTML', 'CSS', 'Animation'],
-    image:
-      'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=85',
+    image: '/products/coffee-stand.jpg',
   },
   {
     id: 4,
@@ -39,8 +36,7 @@ const products = [
     year: '2023',
     description: '作品を大きな画像で楽しめる、ギャラリー形式のポートフォリオ。',
     tags: ['React', 'Modal', 'Accessibility'],
-    image:
-      'https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1200&q=85',
+    image: '/products/photo-gallery.jpg',
   },
 ];
 
